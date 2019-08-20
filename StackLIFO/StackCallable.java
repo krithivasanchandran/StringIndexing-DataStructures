@@ -3,12 +3,16 @@ package StackLIFO;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
+import java.util.stream.Collectors;
 
 public class StackCallable {
 	
 	public static void main(String args[]) {
 		
+		List<String> unsortedList = new ArrayList<String>();
 		int dataSize = 1024 * 1024;
 
         long beforeUsedMem = Runtime.getRuntime().totalMemory()-Runtime.getRuntime().freeMemory();
@@ -30,13 +34,16 @@ public class StackCallable {
 				String line = s.nextLine();
 				if(!line.isEmpty() || line.length() != 0){
 					stck.push(line);
+					unsortedList.add(line);
 				}
 				insertCnt = insertCnt + 1;
-				if(insertCnt == 100000) break;
+				if(insertCnt == 500000) break;
 			}
 		}catch(FileNotFoundException fexp){
 			fexp.printStackTrace();
 		}
+		
+		List<String> p = unsortedList.stream().sorted((t1, t2) -> t1.compareTo(t2)).collect(Collectors.toList());
 		
 		String str = null;
 		
@@ -51,6 +58,8 @@ public class StackCallable {
 		long actualMemUsed=afterUsedMem-beforeUsedMem;
 
 		System.out.println("Actual Memory Used :: Trie :: Suffix Lookup and Search : HashMap : =>" + actualMemUsed/dataSize + "MB");
+	
+		p.forEach((t) -> System.out.println("Sorted ones ----------> " + t));
 	}
 
 }

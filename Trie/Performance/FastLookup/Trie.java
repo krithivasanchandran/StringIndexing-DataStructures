@@ -31,6 +31,7 @@ public class Trie {
 			}else{
 				p = p.arr[index];
 			}
+			i++;
 		}
 		p.isLeaf = true;
 	}
