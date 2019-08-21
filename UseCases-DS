@@ -34,3 +34,13 @@ Single Linked List - Use Cases -
           In many operating systems, the thread scheduler (the thing that chooses what processes need to run at which times) maintains a doubly-linked list of all the processes running at any time.
           This makes it easy to move a process from one queue (say, the list of active processes that need a turn to run) into another queue (say, the list of processes that are blocked and waiting for something to release them).
           The use of a doubly-linked list here allows each of these splices and rewires to run in time O(1), and the doubly-linked-list structure works well for implementing the scheduler using queues (where you only need to pull things out from the front.)
+
+Applications of Circular Linked List
+
+1.Circular lists are used in applications where the entire list is accessed one-by-one in a loop. Example: Operating systems may use it to switch between various running applications in a circular loop.
+
+2.It is also used by Operating system to share time for different users, generally uses Round-Robin time sharing mechanism.
+
+3.Multiplayer games uses circular list to swap between players in a loop.
+
+4.Implementation of Advanced data- structures like Fibonacci Heap.
