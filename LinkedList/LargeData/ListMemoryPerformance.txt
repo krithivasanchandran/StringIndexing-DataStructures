@@ -1,0 +1,95 @@
+1 Lakh String Inputs
+
+Initial Memory During Start of Program Execution :3MB
+Printing the ADDFIRST LKList ===> firstElement -> secondElement -> thirdElement -> fourthElement -> FifthElement -> 
+sixthElement -> seventhElement -> xElements 0-> xElements 1-> xElements 2-> xElements 3-> xElements 4-> xElements 5-> 
+xElements 6-> xElements 7-> xElements 8-> xElements 9-> xElements 10-> xElements 11-> xElements 12-> xElements 13-> 
+xElements 14-> xElements 15-> xElements 16-> xElements 17-> xElements 18-> xElements 19-> xElements 20-> xElements 21->
+xElements 22-> xElements 23-> xElements 24-> xElements 25-> xElements 26-> xElements 27-> xElements 28-> xElements 29->
+xElements 30-> xElements 31-> xElements 32-> xElements 33-> xElements 34-> xElements 35-> xElements 36-> xElements 37-> 
+xElements 38-> xElements 39-> xElements 40-> xElements 41-> xElements 42-> xElements 43-> xElements 44-> xElements 45-> 
+xElements 46-> xElements 47-> xElements 48-> xElements 49-> xElements 50-> xElements 51-> xElements 52-> xElements 53-> 
+xElements 54-> xElements 55-> xElements 56-> xElements 57-> xElements 58-> xElements 59-> xElements 60-> xElements 61->
+xElements 62-> xElements 63-> xElements 64-> xElements 65-> xElements 66-> xElements 67-> xElements 68-> xElements 69-> 
+xElements 70-> xElements 71-> xElements 72-> xElements 73-> xElements 74-> xElements 75-> xElements 76-> xElements 77-> 
+xElements 78-> xElements 79-> xElements 80-> xElements 81-> xElements 82-> xElements 83-> xElements 84-> xElements 85-> 
+xElements 86-> xElements 87-> xElements 88-> xElements 89-> xElements 90-> xElements 91-> xElements 92-> xElements 93-> 
+xElements 94-> xElements 95-> xElements 96-> xElements 97-> xElements 98-> xElements 99-> xElements 100-> xElements 101->
+xElements 102-> xElements 103-> xElements 104-> xElements 105-> xElements 106-> xElements 107-> xElements 108-> 
+xElements 109-> xElements 110-> xElements 111-> xElements 112-> xElements 113-> xElements 114-> xElements 115-> 
+xElements 116-> xElements 117-> xElements 118-> xElements 119-> xElements 120-> xElements 121-> xElements 122-> 
+xElements 123-> xElements 124->  .... xElements 99992-> xElements 99993-> xElements 99994-> xElements 99995-> 
+xElements 99996-> xElements 99997-> xElements 99998
+ End of Program - Trie - Of program Execution : 42MB
+Actual Memory Used :: SingleLinkedList :: Appending New Element : => 38MB
+
+---------------------------------------------------------------------------------
+
+Threads - 3 - Each Thread Inserting 10000 Strings
+
+Initial Memory During Start of Program Execution :3MB
+Created :: LinkedList Thread 1
+Created :: LinkedList Thread 2
+Created :: LinkedList Thread 3
+ End of Program - SinglyLinkedList - Of program Execution : 5MB
+Actual Memory Used :: SingleLinkedList :: Appending New Element : =>1MB
+
+----------------------------------------------------------------------------------
+
+Threads - 4 - Each Thread Inserting 10000 Strings
+
+Initial Memory During Start of Program Execution :3MB
+Created :: LinkedList Thread 1
+Created :: LinkedList Thread 2
+Created :: LinkedList Thread 3
+Created :: LinkedList Thread 4
+ End of Program - SinglyLinkedList - Of program Execution : 5MB
+Actual Memory Used :: SingleLinkedList :: Appending New Element : =>1MB
+
+-----------------------------------------------------------------------------------
+Threads - 10 - Each Thread 10,000 String 
+
+Initial Memory During Start of Program Execution :3MB
+Created :: LinkedList Thread 1
+Created :: LinkedList Thread 2
+Created :: LinkedList Thread 3
+Created :: LinkedList Thread 4
+Created :: LinkedList Thread 5
+Created :: LinkedList Thread 6
+Created :: LinkedList Thread 7
+Created :: LinkedList Thread 8
+Created :: LinkedList Thread 9
+Created :: LinkedList Thread 10
+ End of Program - SinglyLinkedList - Of program Execution : 8MB
+Actual Memory Used :: SingleLinkedList :: Appending New Element : =>5MB
+
+------------------------------------------------------------------------------------
+
+Threads - 20 - Inserting 10000 Strings
+
+Initial Memory During Start of Program Execution :3MB
+Created :: LinkedList Thread 1
+Created :: LinkedList Thread 2
+Created :: LinkedList Thread 3
+Created :: LinkedList Thread 4
+Created :: LinkedList Thread 5
+Created :: LinkedList Thread 6
+Created :: LinkedList Thread 7
+Created :: LinkedList Thread 8
+Created :: LinkedList Thread 9
+Created :: LinkedList Thread 10
+Created :: LinkedList Thread 11
+Created :: LinkedList Thread 12
+Created :: LinkedList Thread 13
+Created :: LinkedList Thread 14
+Created :: LinkedList Thread 15
+Created :: LinkedList Thread 16
+Created :: LinkedList Thread 17
+Created :: LinkedList Thread 18
+Created :: LinkedList Thread 19
+Created :: LinkedList Thread 20
+ End of Program - SinglyLinkedList - Of program Execution : 7MB
+Actual Memory Used :: SingleLinkedList :: Appending New Element : =>3MB
+
+
+
