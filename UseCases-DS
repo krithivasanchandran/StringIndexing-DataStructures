@@ -1,0 +1,36 @@
+-----------------------
+Data Structure Notes :
+-----------------------
+
+LinkedList - to be used - When there are unknown number of elements at run-time
+
+Whenever there are an unknown number of elements at run-time.
+
+Linked lists are dynamic. They can be grown and pruned.
+Insertion and deletion of elements are easy. Remember you can't delete an item in the middle of an array. You'd have to shift everything.
+Linear data structures (e.g. stack, queue) are easy implemented
+Lower memory overhead
+It's about the cost of memory allocation. With a linked list, you don't have to allocate and waste all that space you are not using yet. Or you don't have to reallocate a bigger memory block because you are growing your collection.
+
+Almost any dynamic collection of items is suitable for a linked list. Operating systems and file systems are full of linked lists. So I have to ask where they are not used at all?
+
+Example. Implement a to-do list manager. There are an unknown number of to-do items. Moreover there are an unknown number of to-do lists.
+
+Single Linked List - Use Cases -
+                                            1. Undo button of any application like Microsoft Word, Paint, etc: A linked list of states.
+                                            2. GPS Navigation: A linked list of map data. Travelling from origin to destination is 
+                                               example of traversing through all nodes. Rerouting by a GPS is an example of Add and                                                    Remove operations of map data.
+         Some example of double linked list.
+                                            3. Compared to arrays ,a singly linked list is better when you require frequent delete and update operations(at a particular position). Most importantly it is used when you do not know the size of list in the starting.
+                                               Many complex data structure like trees and graphs use linked list as a basic structure.
+           Doubly LinkedList - Use Cases -
+                                            1. Browser's Next and Previous Button: a linked list of URLs.
+                                            2. Image Viewer's Next and Previous Button: a linked list of images
+                                            3. Undo and Redo button of Photoshop, a linked list of states.
+                                            4. Music Player Playlist. - All Songs -
+
+          LRU Cache - Linked Lists (paired with a hashtable) are really useful for LRU Caches . Every Get needs to bump a node to the front of the list, an operation that is really cheap with linked lists.
+
+          In many operating systems, the thread scheduler (the thing that chooses what processes need to run at which times) maintains a doubly-linked list of all the processes running at any time.
+          This makes it easy to move a process from one queue (say, the list of active processes that need a turn to run) into another queue (say, the list of processes that are blocked and waiting for something to release them).
+          The use of a doubly-linked list here allows each of these splices and rewires to run in time O(1), and the doubly-linked-list structure works well for implementing the scheduler using queues (where you only need to pull things out from the front.)
