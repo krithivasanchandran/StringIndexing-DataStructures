@@ -91,5 +91,67 @@ Created :: LinkedList Thread 20
  End of Program - SinglyLinkedList - Of program Execution : 7MB
 Actual Memory Used :: SingleLinkedList :: Appending New Element : =>3MB
 
+-----------------------------------------------------------------------------
+Insert Node at Last , Insert At First and Search Time (ms ) Time taken to execute
 
-
+Initial Memory During Start of Program Execution :3MB
+Created :: LinkedList Thread 1
+Created :: LinkedList Thread 2
+Created :: LinkedList Thread 3
+Created :: LinkedList Thread 4
+Created :: LinkedList Thread 5
+Created :: LinkedList Thread 6
+Created :: LinkedList Thread 7
+Created :: LinkedList Thread 8
+Created :: LinkedList Thread 9
+Created :: LinkedList Thread 10
+Created :: LinkedList Thread 11
+Created :: LinkedList Thread 12
+Created :: LinkedList Thread 13
+Created :: LinkedList Thread 14
+Created :: LinkedList Thread 15
+Created :: LinkedList Thread 16
+Created :: LinkedList Thread 17
+Created :: LinkedList Thread 18
+Created :: LinkedList Thread 19
+Created :: LinkedList Thread 20
+ End of Program - SinglyLinkedList - Of program Execution : 7MB
+Actual Memory Used :: SingleLinkedList :: Appending New Element : =>3MB
+Insert Operation Time taken -----> :: 1500ms
+LkList is Empty -----> false
+Add First Operation Time taken -----> :: 0ms
+Insert Operation Time taken -----> :: 1478ms
+LkList is Empty -----> false
+Add First Operation Time taken -----> :: 0ms
+Insert Operation Time taken -----> :: 1594ms
+LkList is Empty -----> false
+Add First Operation Time taken -----> :: 0ms
+ Last LkList node -----> Test::LastElement::AddLastMethodTesting
+Removed First :: ==> -> secondElement 
+Insert Operation Time taken -----> :: 1590ms
+LkList is Empty -----> false
+Add First Operation Time taken -----> :: 0ms
+Insert Operation Time taken -----> :: 1572ms
+First LKList node ---> firstElement 
+Insert Operation Time taken -----> :: 1574ms
+LkList is Empty -----> false
+Add First Operation Time taken -----> :: 0ms
+ Last LkList node -----> Test::LastElement::AddLastMethodTesting
+Removed First :: ==> -> secondElement 
+Insert Operation Time taken -----> :: 1570ms
+LkList is Empty -----> false
+Add First Operation Time taken -----> :: 0ms
+Insert Operation Time taken -----> :: 1553ms
+LkList is Empty -----> false
+Add First Operation Time taken -----> :: 0ms
+First LKList node ---> firstElement 
+Insert Operation Time taken -----> :: 1545ms
+LkList is Empty -----> false
+Add First Operation Time taken -----> :: 0ms
+Insert Operation Time taken -----> :: 1545ms
+ Last LkList node -----> Test::LastElement::AddLastMethodTesting
+Removed First :: ==> -> secondElement
+Search Index Performance --> 0ms
+ The searched Term is in index --> 4
+Search Index Performance --> 0ms
+ The searched Term is in index --> 4
