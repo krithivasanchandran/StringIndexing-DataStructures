@@ -1,0 +1,182 @@
+HashCode -------> 2689523
+HashCode -------> 6452
+HashCode -------> 53846
+HashCode -------> 135691
+HashCode -------> 91386
+HashCode -------> 37854
+HashCode -------> 14148
+HashCode -------> 78373
+HashCode -------> 87532
+HashCode -------> 25036
+HashCode -------> 72119
+HashCode -------> 72589
+HashCode -------> 92528
+HashCode -------> 93789
+HashCode -------> 116040
+HashCode -------> 75871
+HashCode -------> 96314
+HashCode -------> 92984
+HashCode -------> 115235
+HashCode -------> 92777
+HashCode -------> 115027
+HashCode -------> 74783
+HashCode -------> 95249
+HashCode -------> 93090
+HashCode -------> 115372
+HashCode -------> 86936
+HashCode -------> 108805
+HashCode -------> 12802
+HashCode -------> 7465
+HashCode -------> 2485
+HashCode -------> 20271
+HashCode -------> 6636
+HashCode -------> 8748
+HashCode -------> 16256
+HashCode -------> 91691
+HashCode -------> 16628
+HashCode -------> 67542
+HashCode -------> 16069
+HashCode -------> 18203
+HashCode -------> 131854
+HashCode -------> 9981
+HashCode -------> 3094
+HashCode -------> 2485
+----------------------------------> Duplicate HashCode Bucket COllision
+HashCode -------> 29660
+HashCode -------> 6668
+HashCode -------> 8748
+----------------------------------> Duplicate HashCode Bucket COllision
+HashCode -------> 16285
+HashCode -------> 91006
+HashCode -------> 16628
+----------------------------------> Duplicate HashCode Bucket COllision
+HashCode -------> 49054
+HashCode -------> 13782
+HashCode -------> 18203
+----------------------------------> Duplicate HashCode Bucket COllision
+HashCode -------> 7755
+HashCode -------> 175883
+HashCode -------> 295842
+HashCode -------> 9981
+----------------------------------> Duplicate HashCode Bucket COllision
+HashCode -------> 3094
+----------------------------------> Duplicate HashCode Bucket COllision
+HashCode -------> 2485
+----------------------------------> Duplicate HashCode Bucket COllision
+HashCode -------> 46952
+HashCode -------> 6692
+HashCode -------> 8748
+----------------------------------> Duplicate HashCode Bucket COllision
+HashCode -------> 16273
+HashCode -------> 91186
+HashCode -------> 16628
+----------------------------------> Duplicate HashCode Bucket COllision
+HashCode -------> 49054
+----------------------------------> Duplicate HashCode Bucket COllision
+HashCode -------> 13782
+----------------------------------> Duplicate HashCode Bucket COllision
+HashCode -------> 18203
+----------------------------------> Duplicate HashCode Bucket COllision
+HashCode -------> 7755
+----------------------------------> Duplicate HashCode Bucket COllision
+HashCode -------> 192117
+HashCode -------> 350100
+HashCode -------> 9981
+----------------------------------> Duplicate HashCode Bucket COllision
+HashCode -------> 3094
+----------------------------------> Duplicate HashCode Bucket COllision
+HashCode -------> 2485
+----------------------------------> Duplicate HashCode Bucket COllision
+HashCode -------> 47255
+HashCode -------> 6708
+HashCode -------> 8748
+----------------------------------> Duplicate HashCode Bucket COllision
+HashCode -------> 16413
+HashCode -------> 91108
+HashCode -------> 16628
+----------------------------------> Duplicate HashCode Bucket COllision
+HashCode -------> 51673
+HashCode -------> 18203
+----------------------------------> Duplicate HashCode Bucket COllision
+HashCode -------> 7755
+----------------------------------> Duplicate HashCode Bucket COllision
+HashCode -------> 96927
+HashCode -------> 162826
+HashCode -------> 2021
+HashCode -------> 9981
+----------------------------------> Duplicate HashCode Bucket COllision
+HashCode -------> 3094
+----------------------------------> Duplicate HashCode Bucket COllision
+HashCode -------> 2485
+----------------------------------> Duplicate HashCode Bucket COllision
+HashCode -------> 68690
+HashCode -------> 7431
+HashCode -------> 8748
+----------------------------------> Duplicate HashCode Bucket COllision
+HashCode -------> 16439
+HashCode -------> 91457
+HashCode -------> 16628
+----------------------------------> Duplicate HashCode Bucket COllision
+HashCode -------> 50123
+HashCode -------> 13755
+HashCode -------> 18203
+----------------------------------> Duplicate HashCode Bucket COllision
+HashCode -------> 7755
+----------------------------------> Duplicate HashCode Bucket COllision
+HashCode -------> 74795
+HashCode -------> 250769
+****   HashTable  ***
+
+ bucket[0] = [      <text xml:space="preserve">#REDIRECT [[American Samoa]]{{R from CamelCase}}</text>,      <text xml:space="preserve">#REDIRECT [[American Samoa]]{{R from CamelCase}}</text>]
+ bucket[1] = [    </namespaces>,    </namespaces>]
+ bucket[2] = [      </contributor>,      </contributor>] -> [      </contributor>,      </contributor>] -> [      </contributor>,      </contributor>] -> [      </contributor>,      </contributor>] -> [      </contributor>,      </contributor>]
+ bucket[3] = [      <namespace key="101">Portal talk</namespace>,      <namespace key="101">Portal talk</namespace>]
+ bucket[4] = [      <timestamp>2005-07-03T11:13:13Z</timestamp>,      <timestamp>2005-07-03T11:13:13Z</timestamp>]
+ bucket[5] = [    <id>8</id>,    <id>8</id>] -> [      <timestamp>2002-02-25T15:43:11Z</timestamp>,      <timestamp>2002-02-25T15:43:11Z</timestamp>]
+ bucket[6] = [      <id>15898943</id>,      <id>15898943</id>]
+ bucket[7] = [      <namespace key="7">Image talk</namespace>,      <namespace key="7">Image talk</namespace>]
+ bucket[8] = [      <comment>adding to cur_id=6  {{R from CamelCase}}</comment>,      <comment>adding to cur_id=6  {{R from CamelCase}}</comment>]
+ bucket[9] = [      <namespace key="1">Talk</namespace>,      <namespace key="1">Talk</namespace>]
+ bucket[10] = [</text>,</text>]
+ bucket[11] = [<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.3/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mediawiki.org/xml/export-0.3/ http://www.mediawiki.org/xml/export-0.3.xsd" version="0.3" xml:lang="en">,<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.3/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mediawiki.org/xml/export-0.3/ http://www.mediawiki.org/xml/export-0.3.xsd" version="0.3" xml:lang="en">] -> [        <username>Ams80</username>,        <username>Ams80</username>]
+ bucket[12] = [      <text xml:space="preserve">#REDIRECT [[Applied ethics]],      <text xml:space="preserve">#REDIRECT [[Applied ethics]]]
+ bucket[13] = [      <namespace key="11">Template talk</namespace>,      <namespace key="11">Template talk</namespace>] -> [      <comment>Automated conversion</comment>,      <comment>Automated conversion</comment>]
+ bucket[14] = [      <namespace key="3">User talk</namespace>,      <namespace key="3">User talk</namespace>] -> [      <contributor>,      <contributor>] -> [      <contributor>,      <contributor>] -> [      <contributor>,      <contributor>] -> [      <contributor>,      <contributor>] -> [      <contributor>,      <contributor>]
+ bucket[15] = [    <id>10</id>,    <id>10</id>]
+ bucket[16] = [      <namespace key="-1">Special</namespace>,      <namespace key="-1">Special</namespace>]
+ bucket[17] = [      <namespace key="9">MediaWiki talk</namespace>,      <namespace key="9">MediaWiki talk</namespace>]
+ bucket[18] = [      <namespace key="0" />,      <namespace key="0" />] -> [      <namespace key="100">Portal</namespace>,      <namespace key="100">Portal</namespace>] -> [    <id>1</id>,    <id>1</id>]
+ bucket[19] = [      <id>15898945</id>,      <id>15898945</id>]
+ bucket[20] = [      <namespace key="5">Wikipedia talk</namespace>,      <namespace key="5">Wikipedia talk</namespace>]
+ bucket[21] = [        <username>Jsmethers</username>,        <username>Jsmethers</username>] -> [      <text xml:space="preserve">#REDIRECT [[Algeria]]{{R from CamelCase}}</text>,      <text xml:space="preserve">#REDIRECT [[Algeria]]{{R from CamelCase}}</text>]
+ bucket[22] = [    <sitename>Wikipedia</sitename>,    <sitename>Wikipedia</sitename>]
+ bucket[23] = [      <namespaces>,      <namespaces>] -> [    <revision>,    <revision>] -> [    <revision>,    <revision>] -> [    <revision>,    <revision>] -> [    <revision>,    <revision>] -> [    <revision>,    <revision>]
+ bucket[24] = [      <namespace key="13">Help talk</namespace>,      <namespace key="13">Help talk</namespace>]
+ bucket[25] = [  <siteinfo>,  <siteinfo>] -> [    <title>AmericanSamoa</title>,    <title>AmericanSamoa</title>]
+ bucket[26] = [    <case>first-letter</case>,    <case>first-letter</case>] -> [      <text xml:space="preserve">#REDIRECT [[AAA]]</text>,      <text xml:space="preserve">#REDIRECT [[AAA]]</text>] -> [        <username>Docu</username>,        <username>Docu</username>] -> [        <username>Docu</username>,        <username>Docu</username>]
+ bucket[27] = [      <minor />,      <minor />] -> [      <minor />,      <minor />] -> [    <title>AppliedEthics</title>,    <title>AppliedEthics</title>] -> [      <minor />,      <minor />] -> [        <id>7543</id>,        <id>7543</id>] -> [      <minor />,      <minor />]
+ bucket[28] = [      <id>32899315</id>,      <id>32899315</id>]
+ bucket[29] = [      <timestamp>2003-04-25T22:18:38Z</timestamp>,      <timestamp>2003-04-25T22:18:38Z</timestamp>]
+ bucket[30] = [    <title>AlgeriA</title>,    <title>AlgeriA</title>]
+ bucket[31] = [  </siteinfo>,  </siteinfo>]
+ bucket[32] = [    <id>5</id>,    <id>5</id>]
+ bucket[33] = [        <id>614213</id>,        <id>614213</id>] -> [      <text xml:space="preserve">#REDIRECT [[Accessible_computing]]</text>,      <text xml:space="preserve">#REDIRECT [[Accessible_computing]]</text>]
+ bucket[34] = [      <namespace key="6">Image</namespace>,      <namespace key="6">Image</namespace>] -> [    <title>AaA</title>,    <title>AaA</title>]
+ bucket[35] = [      <namespace key="15">Category talk</namespace>,      <namespace key="15">Category talk</namespace>]
+ bucket[36] = [      <namespace key="-2">Media</namespace>,      <namespace key="-2">Media</namespace>] -> [      <id>18063795</id>,      <id>18063795</id>] -> [        <ip>Conversion script</ip>,        <ip>Conversion script</ip>]
+ bucket[37] = [      <namespace key="10">Template</namespace>,      <namespace key="10">Template</namespace>]
+ bucket[38] = [    </revision>,    </revision>] -> [    </revision>,    </revision>] -> [    </revision>,    </revision>] -> [    </revision>,    </revision>]
+ bucket[39] = [        <id>8029</id>,        <id>8029</id>] -> [        <id>8029</id>,        <id>8029</id>]
+ bucket[40] = [      <namespace key="12">Help</namespace>,      <namespace key="12">Help</namespace>] -> [      <comment>adding cur_id=5: {{R from CamelCase}}</comment>,      <comment>adding cur_id=5: {{R from CamelCase}}</comment>]
+ bucket[41] = [      <namespace key="8">MediaWiki</namespace>,      <namespace key="8">MediaWiki</namespace>]
+ bucket[42] = [  <page>,  <page>] -> [  <page>,  <page>] -> [      <id>18063769</id>,      <id>18063769</id>] -> [  <page>,  <page>] -> [  <page>,  <page>] -> [  <page>,  <page>]
+ bucket[43] = [    <generator>MediaWiki 1.6alpha</generator>,    <generator>MediaWiki 1.6alpha</generator>] -> [      <timestamp>2005-07-03T11:14:17Z</timestamp>,      <timestamp>2005-07-03T11:14:17Z</timestamp>]
+ bucket[44] = [      <namespace key="2">User</namespace>,      <namespace key="2">User</namespace>] -> [      <namespace key="4">Wikipedia</namespace>,      <namespace key="4">Wikipedia</namespace>]
+ bucket[45] = [      <namespace key="14">Category</namespace>,      <namespace key="14">Category</namespace>] -> [    <title>AccessibleComputing</title>,    <title>AccessibleComputing</title>]
+ bucket[46] = [    <base>http://en.wikipedia.org/wiki/Main_Page</base>,    <base>http://en.wikipedia.org/wiki/Main_Page</base>] -> [      <timestamp>2005-12-27T18:46:47Z</timestamp>,      <timestamp>2005-12-27T18:46:47Z</timestamp>]
+ bucket[47] = [    <id>6</id>,    <id>6</id>]
+ bucket[48] = [  </page>,  </page>] -> [  </page>,  </page>] -> [  </page>,  </page>] -> [  </page>,  </page>]
+ bucket[49] = [      <comment>Fixing redirect</comment>,      <comment>Fixing redirect</comment>]
+HashCode -------> 3519
+
+Value for key(20) :       <namespace key="1">Talk</namespace>
