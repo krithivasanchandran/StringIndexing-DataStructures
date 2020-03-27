@@ -1,0 +1,107 @@
+package Hashes;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.RandomAccessFile;
+import java.nio.ByteBuffer;
+import java.nio.channels.FileChannel;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+import java.util.Scanner;
+import java.util.Set;
+import java.util.concurrent.ConcurrentHashMap;
+
+/*
+ * 
+ * Dataset => https://www.researchgate.net/figure/Word-frequency-distributions-for-the-test-sets-in-the-enwiki9-dataset_fig2_263736381
+ * HashKey -> {0x0706050403020100L, 0x0F0E0D0C0B0A0908L,
+				        0x1716151413121110L, 0x1F1E1D1C1B1A1918L}
+   64 bit HashKey => Hash64(line.getBytes(), 0, line.getBytes().length, key)        
+ */
+
+public class Wiki9128HighWayHashBucketCollisionAnalysis {
+
+	static List<Long> highwayMap = new ArrayList<Long>();
+	static List<String> duplicates = new ArrayList<String>();
+
+	public static void main(String args[]) throws IOException {
+
+		String inboundInputFilePath = "C:/Users/krichandran/Documents/LargeFile-Reading-Dump-File/enwik9/enwik9";
+		int insertCnt = 0;
+
+		try {
+
+			FileInputStream inputStream = new FileInputStream(new File(inboundInputFilePath));
+			Scanner s = new Scanner(inputStream, "UTF-8");
+			 long[] key = {0x0706050403020100L, 0x0F0E0D0C0B0A0908L,
+				        0x1716151413121110L, 0x1F1E1D1C1B1A1918L};
+
+			while (s.hasNextLine()) {
+
+				String line = s.nextLine();
+
+				if (!line.isEmpty() || line.length() != 0) {
+					System.out.println(line);
+					long hashes = HighwayHash.hash64(line.getBytes(), 0, line.getBytes().length, key);
+					System.out.println(" Hashes :: ===========> " + hashes);
+
+					if (highwayMap.contains(hashes)) {
+						System.out.println("Duplicate Hash Key found  ----> " + hashes);
+						duplicates.add(hashes+"--> " +line);
+					} else {
+						highwayMap.add(hashes);
+					}
+				}
+				insertCnt = insertCnt + 1;
+        // 10 Million Hash Collisions of Wiki Pedia Data Set
+				if (insertCnt == 10000000)
+					break;
+			}
+			s.close();
+		} catch (FileNotFoundException fexp) {
+			fexp.printStackTrace();
+		}
+
+		duplicates.forEach((t) -> {
+			try {
+				writeDuplicatesToLargeFile(t);
+			} catch (Exception e) {
+				System.out.println(e.getMessage());
+			}
+		});
+		
+		System.out.println("List of total Duplicates ===> " + duplicates.size());
+		System.out.println("::Compeleted::");
+	}
+
+	public static void writeDuplicatesToLargeFile(String content) throws IOException {
+		RandomAccessFile stream = null;
+		FileChannel channel = null;
+
+		try {
+			File f = new File("C:/Users/krichandran/Documents/duplicates.txt");
+			stream = new RandomAccessFile("C:/Users/krichandran/Documents/duplicates.txt", "rw");
+			stream.seek(f.length());
+			channel = stream.getChannel();
+			
+			ByteBuffer buff = ByteBuffer.allocate(content.getBytes().length);
+			
+			buff.put(content.getBytes());
+			buff.flip();
+			channel.write(buff);
+
+			stream.close();
+			channel.close();
+		} catch (IOException ioex) {
+			System.out.println(ioex.getMessage());
+		} finally {
+			if (stream != null)
+				stream.close();
+			if (channel != null)
+				channel.close();
+		}
+	}
+}
