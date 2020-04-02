@@ -34,7 +34,7 @@ public class Wiki9256HighWayHashLargePrimeCollisionAnalysis {
 	 * Defining Parallel Arrays O(1) for building minor Inmemory Indexes in Heap
 	 * Memory of RAM. Select bucketSize as prime.
 	 */
-	static final int bucket_size = 3079;
+	static final int bucket_size = 10;
 	static final int divisional_factor = 100;
 	static final int milli_seconds_conversional_factor = 1000000;
 
@@ -50,7 +50,7 @@ public class Wiki9256HighWayHashLargePrimeCollisionAnalysis {
 		// 1610612741,805306457,402653189, 201326611;
 
 		String inboundInputFilePath = "C:/Users/krichandran/Documents/LargeFile-Reading-Dump-File/enwik9/enwik9";
-		AtomicInteger insertCnt = new AtomicInteger(bucket_size);
+		AtomicInteger insertCnt = new AtomicInteger(0);
 
 		try {
 
@@ -68,6 +68,7 @@ public class Wiki9256HighWayHashLargePrimeCollisionAnalysis {
 					long[] hashes = HighwayHash.hash256(line.getBytes(), 0, line.getBytes().length, key);
 
 					for (long l : hashes) {
+						System.out.println("Hashes ===> " + l);
 						tHashes.add(l);
 					}
 
