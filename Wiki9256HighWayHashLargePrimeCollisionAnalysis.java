@@ -18,8 +18,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 /*
  * Prime number : 1610612741,805306457,402653189, 201326611 => https://planetmath.org/goodhashtableprimes
  * Dataset => https://www.researchgate.net/figure/Word-frequency-distributions-for-the-test-sets-in-the-enwiki9-dataset_fig2_263736381
- * HashKey -> {0x0706050403020100L, 0x0F0E0D0C0B0A0908L,
-				        0x1716151413121110L, 0x1F1E1D1C1B1A1918L}
+ * HashKey -> {1610612741,805306457,402653189, 201326611}
  * 256 bit HashKey => Hash256(line.getBytes(), 0, line.getBytes().length, key) 
  * Bucket Size : Depending on 16GB ram memory - tough to build inmemory indexes on large data so limiting to the 
  * size of bucket 3079.
