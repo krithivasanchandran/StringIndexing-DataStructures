@@ -69,9 +69,10 @@ public class Wiki9256HighWayHashLargePrimeCollisionAnalysis {
 					long[] hashes = HighwayHash.hash256(line.getBytes(), 0, line.getBytes().length, key);
 
 					for (long l : hashes) {
-						System.out.println("Hashes ===> " + l);
 						tHashes.add(l);
 					}
+					
+					System.out.println("Hashes ===> " + Arrays.toString(hashes));
 					
 					tHashes.forEach((t) -> {
 
@@ -79,7 +80,6 @@ public class Wiki9256HighWayHashLargePrimeCollisionAnalysis {
 							System.out.println("Duplicate Hash Key found  ----> " + t);
 							duplicates.add(t + "--> " + line);
 						} else {
-							System.out.println(" Hashes :: ===========> " + Arrays.toString(hashes));
 							key_inmemory[insertCnt.getAndIncrement()] = t;
 							val_inmemory[insertCnt.getAndIncrement()] = line;
 							highwayMap.add(t);
