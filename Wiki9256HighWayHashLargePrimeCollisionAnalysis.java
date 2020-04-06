@@ -18,7 +18,8 @@ import java.util.concurrent.atomic.AtomicInteger;
 /*
  * Prime number : 1610612741,805306457,402653189, 201326611 => https://planetmath.org/goodhashtableprimes
  * Dataset => https://www.researchgate.net/figure/Word-frequency-distributions-for-the-test-sets-in-the-enwiki9-dataset_fig2_263736381
- * HashKey -> {1610612741,805306457,402653189, 201326611}
+ * HashKey -> {0x0706050403020100L, 0x0F0E0D0C0B0A0908L,
+				        0x1716151413121110L, 0x1F1E1D1C1B1A1918L}
  * 256 bit HashKey => Hash256(line.getBytes(), 0, line.getBytes().length, key) 
  * Bucket Size : Depending on 16GB ram memory - tough to build inmemory indexes on large data so limiting to the 
  * size of bucket 3079.
@@ -30,18 +31,19 @@ public class Wiki9256HighWayHashLargePrimeCollisionAnalysis {
 	static final Set<Long> tHashes = new HashSet<Long>();
 
 	/*
-	 * Defining Parallel Arrays O(1) for building minor Inmemory Indexes in Heap
+	 * Defining Parallel Arrays O(1) for building minor In-memory Indexes in Heap
 	 * Memory of RAM. Select bucketSize as prime.
 	 */
-	static final int bucket_size = 10;
+	static volatile int loop_threashold = 0;
+	static final int bucket_size = 100;
 	static final int divisional_factor = 100;
 	static final int milli_seconds_conversional_factor = 1000000;
 
 	/*
 	 * Select Bleed Red Strategy for building in-memory arrays
 	 */
-	static long[] key_inmemory = new long[bucket_size];
-	static String[] val_inmemory = new String[bucket_size];
+	final static long[] key_inmemory = new long[bucket_size*6];
+	final static String[] val_inmemory = new String[bucket_size*6];
 
 	public static void main(String args[]) {
 
@@ -70,23 +72,23 @@ public class Wiki9256HighWayHashLargePrimeCollisionAnalysis {
 						System.out.println("Hashes ===> " + l);
 						tHashes.add(l);
 					}
+					
+					tHashes.forEach((t) -> {
 
-					highwayMap.parallelStream().forEach((t) -> {
-
-						if (tHashes.contains(t)) {
-							System.out.println("Duplicate Hash Key found  ----> " + hashes);
+						if (highwayMap.contains(t)) {
+							System.out.println("Duplicate Hash Key found  ----> " + t);
 							duplicates.add(t + "--> " + line);
-							key_inmemory[insertCnt.get()] = t;
-							val_inmemory[insertCnt.get()] = line;
 						} else {
 							System.out.println(" Hashes :: ===========> " + Arrays.toString(hashes));
-							highwayMap.addAll(tHashes);
+							key_inmemory[insertCnt.getAndIncrement()] = t;
+							val_inmemory[insertCnt.getAndIncrement()] = line;
+							highwayMap.add(t);
 						}
 					});
 					tHashes.clear();
 				}
-				int internalCounter = insertCnt.incrementAndGet();
-				if (internalCounter == bucket_size - 1)
+				
+				if ((loop_threashold++) == (bucket_size - 1))
 					break;
 			}
 			s.close();
@@ -107,7 +109,6 @@ public class Wiki9256HighWayHashLargePrimeCollisionAnalysis {
 		CalculateTimetoAccessInMemoryIndexes(key_inmemory, val_inmemory);
 
 		System.out.println("::Compeleted::");
-
 	}
 
 	public static void writeDuplicatesToLargeFile(String content) throws IOException {
@@ -140,7 +141,7 @@ public class Wiki9256HighWayHashLargePrimeCollisionAnalysis {
 
 	public static void CalculateTimetoAccessInMemoryIndexes(long[] key_inmem, String[] val_inmem) {
 
-		for (int i = 0; i < key_inmem.length - 2000; i++) {
+		for (int i = 0; i < key_inmem.length; i++) {
 
 			long startTime = System.nanoTime();
 
@@ -148,10 +149,7 @@ public class Wiki9256HighWayHashLargePrimeCollisionAnalysis {
 			System.out.println("Inmemory Access Value ===> " + val_inmem[i]);
 
 			long time = System.nanoTime() - startTime;
-
 			System.out.println("Time Taken In-Memory Index Access :: > " + time / milli_seconds_conversional_factor);
 		}
-
 	}
-
 }
